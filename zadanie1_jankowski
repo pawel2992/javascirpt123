@@ -3,9 +3,9 @@
     <HTML>
         <HEAD>
             <meta charset="utf-8">
-            <TITLE>Osadzanie pliku JS-Radulski</TITLE>
+            <TITLE>Osadzanie pliku JS-Jankowski</TITLE>
             <script type="text/javascript">
-                function okno_zamknij_Radulski()
+                function okno_zamknij_Jankowski()
                 {
                 window.close()
                 }
@@ -18,6 +18,6 @@
             document.write("!".fontcolor("#800080")+"&nbsp;&nbsp;&nbsp;Radulski ".fontcolor("navy")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!".fontcolor("#800080")+"<br>");
             document.write("!!!!!!!!!!!!!!!!!!!!!!".fontcolor("#800080")+"<br>");
         </SCRIPT><br>
-        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Jankowski()"/>
     </BODY>
 </HTML>
