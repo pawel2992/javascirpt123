@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function okno_zamknij_Radulski()
+        {
+        window.close()
+        }
+        </script>
+    </head>
+    <body>
+        <b>1)kiedy powstał JavaScript.<br></b>
+        Powstał w 1995 roku
+        <br><br>
+        <b>2)dlaczego jest to język skryptowy<br></b>
+        Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. Wystarczy nam do tego przeglądarka internetowa, która ten język obsługuje.
+        <br><br>
+        <b>3)gdzie jest wykonywany JS (klient lub serwer)<br></b>
+        JavaScript jest najczęściej stosowany po stronie klienta.
+        <br><br>
+        <b>4)dlaczego jest JS to bezpieczne narzędzie<br></b>
+        Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.
+        <br><br>
+        <b>5)czy jest to język obiektowy , jeśli tak to dlaczego.<br></b>
+        Javascript jest językiem programowania obiektowego ponieważ wykorzystuje definicje obiektów, metod, zdarzeń, które mogą być zastosowane do opisu właściwości obiektów.
+        <br><br>
+        <b>6)wymień zalety JS:<br></b>
+        Zaleta1: Prostota <br>
+        Zaleta2: Pozwala on na odciążenie serwerów i ograniczenie ilości zbędnych danych przesyłanych pomiędzy nimi a przeglądarką klienta.<br>
+        Zaleta3: JavaScript pomaga użytkownikom tworzyć nowoczesne aplikacje internetowe do bezpośredniej interakcji bez ponownego ładowania strony za każdym razem.<br>
+        <br><br>
+        <b>7)Framework to:<br></b>
+        Rodzaj programu do tworzenia innych programów w JS
+        <br><br>
+        <b>8)Do aplikacji mobilnych można użyć Framework<br></b>
+        Funkcje i zastosowania JavaScript sprawiają, że jest to potężne narzędzie do tworzenia aplikacji mobilnych. Bardzo popularnym frameworkiem do tworzenia aplikacji jest React Native.
+        <br><br>
+        <b>9)Aplikacje responsywne to:<br></b>
+        Responsywność JavaScript udostępnia metody, których można użyć w aplikacji, aby uzyskać bieżący rozmiar ekranu i wykorzystać wynik do wykonania działań w oparciu o ten rozmiar.
+        <br><br>
+        <b>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu:<br>
+        &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br></b>
+        Ten fragment kodu stwarza przycisk który otwiera osobną kartę przeglądarki w której jest jakaś strona.
+        <br><br>
+        <b>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu<br>
+        window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br><br></b>
+        Wytłumaczenie:<br>
+        toolbar=no - Ukrywa pasek narzędziowy przeglądarki<br>
+        directories=no - Ukrywa pasek z zakładkami<br>
+        menubar=no - Wyłącza pasek menu<br>
+        height=280 - Ustawia wysokość nowego okna<br>
+        width=160 - Ustawia szerokość nowego okna<br>
+        top=200 - Ustawia pozycje nowego okna na osi pionowej<br>
+        eft=200 - Ustawia pozycje nowego okna na osi poziomej<br>
+        <br><br>
+        <b>12)Opisz następującą instrukcję window.close()</b><br>
+        Zamyka otwartą kartę przeglądarki.
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+    </body>
+</html>
