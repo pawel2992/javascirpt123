@@ -2,15 +2,15 @@
 <html>
     <head>
         <script type="text/javascript">
-        function okno_zamknij_Radulski()
+        function okno_zamknij_Jankowski()
         {
         window.close()
         }
         </script>
     </head>
     <body>
-        Radulski
+        Jankowski
         <img src="obraz1.gif"/>
-        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Jankowski()"/>
     </body>
 </html>
