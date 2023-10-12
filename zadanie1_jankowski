@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <HTML>
+        <HEAD>
+            <meta charset="utf-8">
+            <TITLE>Osadzanie pliku JS-Radulski</TITLE>
+            <script type="text/javascript">
+                function okno_zamknij_Radulski()
+                {
+                window.close()
+                }
+            </script>
+        </HEAD>
+    <BODY>
+        <SCRIPT>
+            document.write("!!!!!!!!!!!!!!!!!!!!!!".fontcolor("#800080")+"<br>");
+            document.write("!".fontcolor("#800080")+"&nbsp;&nbsp;&nbsp;Kamil ".fontcolor("navy")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!".fontcolor("#800080")+"<br>");
+            document.write("!".fontcolor("#800080")+"&nbsp;&nbsp;&nbsp;Radulski ".fontcolor("navy")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!".fontcolor("#800080")+"<br>");
+            document.write("!!!!!!!!!!!!!!!!!!!!!!".fontcolor("#800080")+"<br>");
+        </SCRIPT><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+    </BODY>
+</HTML>
