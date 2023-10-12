@@ -3,9 +3,9 @@
     <HTML>
         <HEAD>
             <meta charset="utf-8">
-            <TITLE>SKRYPT zewnętrzny-Radulski</TITLE>
+            <TITLE>SKRYPT zewnętrzny-Jankowski</TITLE>
             <script type="text/javascript">
-                function okno_zamknij_Radulski()
+                function okno_zamknij_Jankowski()
                 {
                 window.close()
                 }
@@ -13,6 +13,6 @@
     </HEAD>
     <BODY>
         <SCRIPT type="text/javascript" src="Radulski_zewnetrzny.js"></SCRIPT><br>
-        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Jankowski()"/>
     </BODY>
     </HTML>
