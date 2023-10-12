@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <HTML>
+        <HEAD>
+            <meta charset="utf-8">
+            <TITLE>SKRYPT zewnętrzny-Radulski</TITLE>
+            <script type="text/javascript">
+                function okno_zamknij_Radulski()
+                {
+                window.close()
+                }
+            </script>
+    </HEAD>
+    <BODY>
+        <SCRIPT type="text/javascript" src="Radulski_zewnetrzny.js"></SCRIPT><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Radulski()"/>
+    </BODY>
+    </HTML>
