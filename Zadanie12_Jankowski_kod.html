@@ -2,7 +2,7 @@
 <html>
     <head>
         <script>
-            function okno_zamknij_Aug()
+            function okno_zamknij_Jankowski()
                 {
                 window.close()
                 }
@@ -28,22 +28,22 @@
             var D2_Aug = parseInt(prompt("Podaj drugi dzień: "));
             var G1_Aug = parseInt(prompt("Podaj pierwszą godzine: "));
             var G2_Aug = parseInt(prompt("Podaj drugą godzine: "));
-            if (D1_Aug < 1 || D1_Aug > 31 || D2_Aug > D1_Aug || D2_Aug > 31) {
-                  if (G1_Aug < 1 || G1_Aug > 24 || G2_Aug < 1 || G2_Aug > 24) {
+            if (D1_Jankowski < 1 || D1_Jankowski > 31 || D2_Jankowski > D1_Jankowski || D2_Jankowski > 31) {
+                  if (G1_Jankowski < 1 || G1_Jankowski > 24 || G2_Jankowski < 1 || G2_Jankowski > 24) {
         alert("Podane dni są niepoprawne.");
               }}else{
-            var roznicaD = Math.abs((D2_Aug - D1_Aug) * 86400);
-            var roznicaG = Math.abs((G2_Aug - G1_Aug) * 3600);
+            var roznicaD = Math.abs((D2_Jankowski - D1_Jankowski) * 86400);
+            var roznicaG = Math.abs((G2_Jankowski - G1_Jankowski) * 3600);
             suma=roznicaD-roznicaG;
                  }
          document.write("Różnica między tymi dniami i godzinami wynosi: ", suma, " sekund");
        </script>
   </font>
-<input type="button" value="zamknij okno" onclick="okno_zamknij_Aug()"/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Jankowski()"/>
     </body>
 </html>
         </textarea>
         <br><br>
-        <input type="button" value="zamknij okno" onclick="okno_zamknij_Aug()"/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Jankowski()"/>
     </body>
 </html>
