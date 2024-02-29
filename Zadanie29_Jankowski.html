@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 29 - Odpowiedzi</title>
+</head>
+<body>
+
+    <h1>1. W jaki sposób można określić właściwość danego obiektu (dwa sposoby wraz z przykładami)?</h1>
+    <p>
+        Właściwość obiektu można określić za pomocą kropki (dot notation), na przykład:
+        <code>obiekt.wlasciwosc</code>. Innym sposobem jest użycie nawiasów kwadratowych (bracket notation):
+        <code>obiekt['wlasciwosc']</code>.
+    </p>
+
+    <h1>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</h1>
+    <p>
+        Aby odwołać się do pól (właściwości) i metod obiektu, można użyć dot notation lub bracket notation,
+        np. <code>obiekt.pole</code> lub <code>obiekt['metoda']</code>.
+    </p>
+
+    <h1>3. Wymień cechy charakterystyczne konstruktora.</h1>
+    <p>
+        Konstruktor to specjalna metoda służąca do tworzenia i inicjalizowania obiektów. Cechy charakterystyczne konstruktora to:
+        <ul>
+            <li>Używa słowa kluczowego <code>this</code> do odwoływania się do pól i metod obiektu.</li>
+            <li>Zazwyczaj zaczyna się wielką literą.</li>
+            <li>Wywoływany jest za pomocą słowa kluczowego <code>new</code>.</li>
+        </ul>
+    </p>
+
+    <h1>4. Konstruowanie obiektu na podstawie przykładu - obiekt ma trzy pola oraz jedną metodę.</h1>
+    <p>
+        Przykładowy konstruktor w JavaScript:
+        <pre>
+            <code>
+                function PrzykladowyObiekt(pole1, pole2, pole3) {
+                    this.pole1 = pole1;
+                    this.pole2 = pole2;
+                    this.pole3 = pole3;
+
+                    this.metoda = function() {
+                        // logika metody
+                    };
+                }
+
+                // Utworzenie nowego obiektu
+                let mojObiekt = new PrzykladowyObiekt('wartosc1', 'wartosc2', 'wartosc3');
+            </code>
+        </pre>
+    </p>
+
+    <h1>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody?</h1>
+    <p>
+        Słowo kluczowe <code>this</code> odnosi się do bieżącego obiektu. Pola i metody oddzielamy przy pomocy słowa kluczowego <code>this</code>,
+        np. <code>this.pole</code> odnosi się do pola, a <code>this.metoda()</code> do metody.
+    </p>
+
+    <h1>6. Konstruktor w JS na podstawie przykładu wraz z opisem.</h1>
+    <p>
+        Przykładowy konstruktor w JavaScript:
+        <pre>
+            <code>
+                function Osoba(imie, nazwisko) {
+                    this.imie = imie;
+                    this.nazwisko = nazwisko;
+
+                    this.przedstawSie = function() {
+                        console.log('Nazywam się ' + this.imie + ' ' + this.nazwisko);
+                    };
+                }
+
+                // Utworzenie obiektu osoba
+                let mojaOsoba = new Osoba('Jan', 'Kowalski');
+                mojaOsoba.przedstawSie(); // Wywołanie metody
+            </code>
+        </pre>
+    </p>
+
+    <h1>7. Znaczenie słowa kluczowego New wraz z przykładem.</h1>
+    <p>
+        Słowo kluczowe <code>new</code> służy do tworzenia instancji obiektu na podstawie konstruktora. Przykład:
+        <pre>
+            <code>
+                let nowyObiekt = new Konstruktor();
+            </code>
+        </pre>
+    </p>
+
+    <h1>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem (szczególnie ważny tekst pogrubiony).</h1>
+    <p>
+        Słowo kluczowe <code>prototype</code> jest właściwością funkcji konstruktora, która umożliwia dodanie nowych właściwości i metod do wszystkich
+        instancji danego typu obiektu. Przykład:
+        <pre>
+            <code>
+                function PrzykladowyKonstruktor() {
+                    // logika konstruktora
+                }
+
+                // Dodanie nowej metody za pomocą prototype
+                PrzykladowyKonstruktor.prototype.nowaMetoda = function() {
+                    // logika nowej metody
+                };
+
+                // Utworzenie obiektu i wywołanie nowej metody
+                let przykladowyObiekt = new PrzykladowyKonstruktor();
+                przykladowyObiekt.nowaMetoda();
+            </code>
+        </pre>
+        **Ważne:** Słowo kluczowe <code>prototype</code> pozwala na współdzielenie metody między wszystkimi instancjami danego konstruktora,
+        co może zredukować zużycie pamięci.
+    </p>
+
+</body>
+</html>
