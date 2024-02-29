@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function router(firma_r, model_r, kolor_r) {
+      this.firma = firma_r;
+      this.model = model_r;
+      this.kolor = kolor_r;
+    }
+
+    router.prototype.wypisz = function () {
+      alert(this.firma + ' ' + this.model + ' ' + this.kolor);
+    };
+
+    var router1 = new router("dell", "2h31ue", "czarny");
+    var router2 = new router('msi', '9d3412', 'bialy');
+
+    router1.wypisz();
+    router2.wypisz();
+
+    document.write("Nie wiem, co tu dać, nic dla mnie nie ma sensu, więc po prostu wypiszę specyfikację pierwszego routera" + "<br>");
+
+    document.write("Router pierwszy" + " " + router1.firma + " " + router1.model + " " + router1.kolor);
+  </script>
+</head>
+<body>
+  <br>
+  Programowanie obiektowe
+</body>
+</html>
