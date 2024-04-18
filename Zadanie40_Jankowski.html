@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Zadanie JavaScript</title>
+<meta charset="utf-8">
+<style>
+h1 { text-transform: uppercase; }
+</style>
+</head>
+<body bgcolor=purple>
+<h1>Proste działania</h1>
+<h2>iwinski Klasa 3G </h2>
+<iwi for="a">Podaj pierwszą liczbę:</iwi> <input type="number" id="a">
+<br><br>
+<iwi for="b">Podaj drugą liczbę:</iwi> <input type="number" id="b">
+<br><br>
+<input type="button" value="DODAWANIE" onclick="suma_iwi()">
+<input type="button" value="ODEJMOWANIE" onclick="roznica_iwi()">
+<input type="button" value="MNOŻENIE" onclick="iloczyn_iwi()">
+<input type="button" value="DZIELENIE" onclick="iloraz_iwi()">
+<input type="button" value="DZIELENIE MODULO" onclick="dzielenie_modulo_iwi()">
+<input type="button" value="Teoria iwinski" onclick="teoria_iwi()">
+<div id="wynik" style="margin-top:20px;"></div>
+<script>
+function suma_iwi()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if (a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+} else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var suma = a + b;
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma;
+}
+//alert(a);
+//console.log(a);
+}
+function roznica_iwi()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if (a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+} else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var roznica = a - b;
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica;
+}
+}
+
+function iloczyn_iwi()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if (a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+} else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var iloczyn = a * b;
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn;
+}
+}
+function iloraz_iwi()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if (a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+} else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+if (b == 0)
+{
+document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+}
+else
+{
+var iloraz = a / b;
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz;
+}
+}
+}
+
+function dzielenie_modulo_iwi()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if (a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+} else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var modulo = a%b;
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + modulo;
+}
+//alert(a);
+//console.log(a);
+}
+function teoria_iwi()
+{
+document.write("<font color=green size=4>pierwsza linia teorii</font>"+"<br>");
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>iwi for=</font>"+"<font color=red size=4>&quot;</font>");
+document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>");
+document.write("<font color=red size=4>Podaj pierwszą liczbę:</font>");
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>/iwi</font>"+"<font color=red size=4>&gt;</font>");
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>input type=</font>"+"<font color=red size=4>&quot;</font>");
+document.write("<font color=red size=4>number</font>"+"<font color=red size=4>&quot;</font>");
+document.write("<font color=red size=4> id=</font>"+"<font color=red size=4>&quot;</font>");
+document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"+"<br>");
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+document.write("<font color=red size=4>wykonanie numerycznego pola formularza z opisem 'Podaj pierwszą liczbę:' a nazwa pola to 'a' </font>"+"<br><br>");
+
+document.write("<font color=green size=4>Druga linia teorii</font>"+"<br>");
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>input type &quot; button &quot; value=&quot; DODAWANIE&quot; onclick=&quot; suma()&quot; &gt;</font>"+"<br>");
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+document.write("<font color=red size=4>Wykonanie przycisku o nazwie DODAWANIE i z takim samym napisem, kliknięcie myszką uruchamia funkcję suma().</font>"+"<br><br>");
+
+
+document.write("<font color=green size=4>Trzecia linia teorii</font>"+"<br>");
+document.write("<font color=red size=4>var a = document.getElementById(&quot;a&quot;).value;</font>"+"<br>");
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+document.write("<font color=red size=4>wpisanie do zmiennej &quot;a&quot; wartości z elementu o Id &quot;a&quot; (zbieżność nazw)</font>"+"<br><br>");
+
+document.write("<font color=green size=4>Czwarta linia teorii</font>"+"<br>");
+document.write("<font color=red size=4>if(a==&quot;&quot;||b==&quot;&quot;)</font>"+"<br>");
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+document.write("<font color=red size=4>sprawdzenie czy pola &quot;a&quot; lub &quot;b&quot; są puste.</font>"+"<br><br>");
+
+
+document.write("<font color=green size=4>Piąta linia teorii</font>"+"<br>");
+document.write("<font color=red size=4>document.getElementById(&quot;wynik&quot;).innerHTML=&quot;Wynik działania wynosi: &quot; + suma;</font>"+"<br>");
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+document.write("<font color=red size=4>pobranie wartości Id o nazwie &quot;wynik&quot; i wyprowadzenie w oknie przeglądarki tekstu &quot;Wynik działania wynosi: &quot; oraz wartości zmiennej suma;</font>"+"<br><br>");
+}
+</script>
+</body>
+</html>
