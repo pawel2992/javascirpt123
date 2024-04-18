@@ -1,0 +1,19 @@
+<html>
+<body bgcolor=teal>
+<meta charset="utf-8">
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+var x=prompt("podaj liczbę x=","");
+ var a_dana_iwi=parseFloat(x);
+ document.write("czytana liczba x="+a_dana_iwi+"<br>"); 
+ if(a_dana_iwi>0)
+ {document.write("czytana liczba jest większa od 0"+"<br>");}
+ if (a_dana_iwi==0)
+ {document.write("Czytana liczba jest równa 0"+"<br>");}
+  if(a_dana_iwi<0)
+ {document.write("czytana liczba jest mniejsza od 0"+"<br>");}
+
+ </script>
+</div>
+</body>
+</html>
