@@ -1,0 +1,62 @@
+<html>
+<body bgcolor="silver">
+<meta charset="utf-8">
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+
+ document.write ("<p style=\"font-size: 43.px; color: green;\"><br>Moje imie i nazwisko to: pATRYK iWINSKI<br></p>");
+ document.write ("<p style=\"font-size: 43.px; color: green;\"><br>Liczba1:6<br></p>");
+ document.write ("<p style=\"font-size: 43.px; color: green;\"><br>Liczba2:6 + 7 = 13<br></p>");
+ document.write ("<p style=\"font-size: 43.px; color: green;\"><br>Liczba3:7<br></p>");
+ document.write ("<p style=\"font-size: 43.px; color: green;\"><br>Liczba4:7 + 4 = 11<br></p>");
+
+ document.write ("<p style=\"font-size: 50.px; color: red;\"><br>------MENU------<br></p>");
+  document.write ("<p style=\"font-size: 50.px; color: red;\"><br> 3 - wyswietlanie teorii o operatorach<br></p>");
+  document.write ("<p style=\"font-size: 50.px; color: red;\"><br> 29 - czy liczba nalezy do przedziału (od 6 do 13]<br></p>");
+  document.write ("<p style=\"font-size: 50.px; color: red;\"><br> 58 - czy liczba nalezy do przedziału (od -oo ; 4) lub [11 ; +oo)<br></p>");
+
+  function fun_iwi(){
+ var x=prompt("podaj opcje=","");
+ var opcja_iwi=parseFloat(x); 
+ if (opcja_iwi==3){
+ document.write("<font color=green size=7>Jesteś w opcja 6 --> teoria</font>"+"<br>");
+  document.write("<font color=green size=7>&& i x=3 y=4 (x<9 && y>2) wynik --> Prawda</font>"+"<br>");
+  document.write("<font color=green size=7>|| lub x=3 y=4 (x==8 || y==6) wynik --> Fałsz</font>"+"<br>");
+  document.write("<font color=green size=7>! zaprzeczenie x=3 y=4 !(x==y) wynik --> Prawda</font>"+"<br>");
+}
+if (opcja_iwi==29){
+document.write("<font color=green size=7>Jesteś w opcja 24 --> przedział</font>"+"<br>");
+ var y=prompt("podaj liczbe do przedziału=","");
+ var p_iwi=parseFloat(y); 
+ if ((p_iwi>6) && (p_iwi<=13)){
+ document.write("<font color=green size=7>Liczba "+p_iwi+" należy do przedziału</font>"+"<br>");
+}
+else{
+document.write("<font color=green size=7>Liczba "+p_iwi+" nie należy do przedziału</font>"+"<br>");
+}
+}
+if (opcja_iwi==58){
+ document.write("<font color=green size=7>Jesteś w opcja 70 --> przedział</font>"+"<br>");
+ var z=prompt("podaj liczbe do przedziału=","");
+ var p2_iwi=parseFloat(z); 
+ if ((p2_iwi<4) || (p2_iwi>=11)){
+ document.write("<font color=green size=7>Liczba "+p2_iwi+" należy do przedziału</font>"+"<br>");
+}
+else{
+document.write("<font color=green size=7>Liczba "+p2_iwi+" nie należy do przedziału</font>"+"<br>");
+}
+ 
+}
+if((opcja_iwi!=6)&&(opcja_iwi!=24)&&(opcja_iwi!=70))
+{
+ document.write("<font color=red size=7> nie ma takiej opcji</font>"+"<br>"); 
+}
+}
+ </script>
+
+  
+</div>
+  <input type="button" style="height:80px;width:300px;background:red;"  name="nazwisko_ucznia" value="Kliknij by podać opcje" onclick="fun_iwi()" />
+</body >
+
+</html>
