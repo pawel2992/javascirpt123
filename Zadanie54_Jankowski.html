@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 52</title>
+    <title>Zadanie 54</title>
 </head>
 <body>
     <script>
         imie = prompt("Podaj imię:");
     nazwisko = prompt("Podaj nazwisko:");
-       a_iwi = (nazwisko.length % 4) + 5;
-    b_iwi = (imie.length % 6) + 20;
-         document.write(a_iwi); 
+       a_Jank = (nazwisko.length % 4) + 5;
+    b_Jank = (imie.length % 6) + 20;
+         document.write(a_Jank); 
 		    document.write("<br>");
-		 document.write(b_iwi); 
+		 document.write(b_Jank); 
         document.write("<pre>"); 
         // Górna krawędź
-        for (var i = 0; i < b_iwi + 2; i++) {
+        for (var i = 0; i < b_Jank + 2; i++) {
             document.write("*");
         }
         document.write("<br>");
 
         // Środek
-        for (var i = 0; i < a_iwi; i++) {
+        for (var i = 0; i < a_Jank; i++) {
             document.write("*");
-            for (var j = 0; j < b_iwi; j++) {
+            for (var j = 0; j < b_Jank; j++) {
                 document.write("&nbsp;");
             }
             document.write("*<br>");
         }
 
         // Dolna krawędź
-        for (var i = 0; i < b_iwi + 2; i++) {
+        for (var i = 0; i < b_Jank + 2; i++) {
             document.write("*");
         }
         document.write("<br>");
