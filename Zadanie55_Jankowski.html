@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="l1_t_iwi">Pierwsza liczba (od 20 do 60): </label>
+        <input type="number" id="l1_t_iwi" min="20" max="60" required><br><br>
+        
+        <label for="l2_t_iwi">Druga liczba (od 20 do 60): </label>
+        <input type="number" id="l2_t_iwi" min="20" max="60" required><br><br>
+        
+        <label for="pocz_iwi">Wartość początkowa wielkości tekstu: </label>
+        <input type="number" id="pocz_iwi" min="0" max="100" required><br><br>
+        
+        <label for="tekst_iwi">Dowolny tekst: </label>
+        <input type="text" id="tekst_iwi" required><br><br>
+        
+        <button type="submit">Wyślij</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            var l1_t_iwi = parseInt(document.getElementById("l1_t_iwi").value);
+            var l2_t_iwi = parseInt(document.getElementById("l2_t_iwi").value);
+            var pocz_iwi = parseInt(document.getElementById("pocz_iwi").value);
+            var tekst_iwi = document.getElementById("tekst_iwi").value;
+
+            if (isNaN(l1_t_iwi) || isNaN(l2_t_iwi) || isNaN(pocz_iwi)) {
+                alert("Proszę wprowadzić poprawne liczby.");
+                return;
+            }
+
+            if (l1_t_iwi < 20 || l1_t_iwi > 60) {
+                alert("Liczba 1 nie należy do przedziału <20,60>");
+                return;
+            }
+
+            if (l2_t_iwi < 20 || l2_t_iwi > 60) {
+                alert("Liczba 2 nie należy do przedziału <20,60>");
+                return;
+            }
+
+            var i = pocz_iwi;
+            if (l1_t_iwi < l2_t_iwi) {
+                while (i < 100) {
+                    document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_iwi + "<br></p>");
+                    i += 5;
+                }
+            } else if (l1_t_iwi > l2_t_iwi) {
+                while (i > 0) {
+                    document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_iwi + "<br></p>");
+                    i -= 5;
+                }
+            } else {
+                document.write("<p style=\"font-size:" + pocz_iwi + "px; color: black;\"><br>" + tekst_iwi + "<br></p>");
+            }
+        });
+    </script>
+</body>
+</html>
