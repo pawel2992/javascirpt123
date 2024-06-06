@@ -7,32 +7,32 @@
 </head>
 <body>
     <script>
-        // Zapytaj użytkownika o wartości a_iwi i b_iwi
+        
         var nazwisko = prompt("nazwisko");
         var imie = prompt("imie");
-        var a_iwi = (nazwisko.length % 4) + 5;
-        var b_iwi = (imie.length % 6) + 20;
+        var a_Jank = (nazwisko.length % 4) + 5;
+        var b_Jank = (imie.length % 6) + 20;
          document.write(a_iwi); 
 		    document.write("<br>");
-		 document.write(b_iwi); 
+		 document.write(b_Jank); 
         document.write("<pre>"); 
-        // Górna krawędź
-        for (var i = 0; i < b_iwi + 2; i++) {
+     
+        for (var i = 0; i < b_Jank + 2; i++) {
             document.write("*");
         }
         document.write("<br>");
 
-        // Środek
-        for (var i = 0; i < a_iwi; i++) {
+     
+        for (var i = 0; i < a_Jank; i++) {
             document.write("*");
-            for (var j = 0; j < b_iwi; j++) {
+            for (var j = 0; j < b_Jank; j++) {
                 document.write("&nbsp;");
             }
             document.write("*<br>");
         }
 
-        // Dolna krawędź
-        for (var i = 0; i < b_iwi + 2; i++) {
+
+        for (var i = 0; i < b_Jank + 2; i++) {
             document.write("*");
         }
         document.write("<br>");
