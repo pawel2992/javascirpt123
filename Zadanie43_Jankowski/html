@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="color:red;font-size:50px;">
+ <script>
+  let liczba = prompt("Wprowadź liczbę:");
+  liczba = parseInt(liczba);
+  for(let i=2; i<=liczba; i+=2) {
+    document.write(i + "<br>");
+  }
+ </script>
+</div>
+</body>
+</html>
