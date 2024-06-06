@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sigma Calculator</title>
+</head>
+<body>
+  <h1>Sigma Calculator</h1>
+  <form>
+    <input id="result" type="text" readonly> <br>
+	 <input id="result1" type="text" readonly>
+  </form>
+  <script>
+    let sum = 0;
+    for (let i = 2; i <= 4; i++) {
+      sum += i * i; // calculate i^2 and add to sum
+    }
+    document.getElementById("result").value = sum;
+	
+	 let sum1 = 0;
+    for (let i = 3; i >= 1; i--) {
+      sum1 += i / (i + 2);
+    }
+    document.getElementById("result1").value = sum1;
+  </script>
+</body>
+</html>
