@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Drukowanie liczb i pierwiastków</title>
+</head>
+<body>
+    <h1>Drukowanie liczb i pierwiastków</h1>
+   <script>
+    let i = prompt("Podaj numer w dzienniku:");
+    let end = parseInt(i) + 15;
+    let counter = 0;
+
+    for (let j = i; j <= end; j++) {
+        let pierw_2 = Math.sqrt(j).toFixed(2);
+        let pierw_4 = Math.sqrt(pierw_2).toFixed(2);
+        document.write("I=" + j + " pierw_2(" + j + ")=" + pierw_2 + " pierw_4(" + j + ")=" + pierw_4 + "<br>");
+
+        counter++;
+        if (counter % 3 === 0 && j!== end) {
+            document.write("<br>");
+            if (!confirm("Aby kontynuować, naciśnij ok, nie wiem jak zrobic aby sie pojawiało po wypisaniu ")) {
+                break;
+            }
+        }
+    }
+
+    
+</script>
+</body>
+</html>
