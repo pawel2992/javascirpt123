@@ -8,7 +8,7 @@
     <h1>Drukowanie liczb i pierwiastków</h1>
    <script>
     let i = prompt("Podaj numer w dzienniku:");
-    let end = parseInt(i) + 15;
+    let end = parseInt(i) + 12;
     let counter = 0;
 
     for (let j = i; j <= end; j++) {
@@ -19,7 +19,7 @@
         counter++;
         if (counter % 3 === 0 && j!== end) {
             document.write("<br>");
-            if (!confirm("Aby kontynuować, naciśnij ok, nie wiem jak zrobic aby sie pojawiało po wypisaniu ")) {
+            if (!confirm("Aby kontynuować, naciśnij ok")) {
                 break;
             }
         }
